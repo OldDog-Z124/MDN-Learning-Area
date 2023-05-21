@@ -1,0 +1,159 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+/* font family */
+@font-face {
+  font-family: '1942_report1942_report';
+  src: url('./fonts/webfontkit/1942-webfont.woff2') format('woff2'),
+       url('./fonts/webfontkit/1942-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* styling font */
+
+html {
+  font-family: 'Roboto Slab', serif;
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: 0.1rem;
+  word-spacing: .5rem;
+}
+
+h1, h2 {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: .1rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+section h2 + p {
+  text-indent: 2rem;
+}
+
+/* link */
+a:link {
+  color: #a66;
+}
+
+a:visited {
+  color: #aaa;
+}
+
+a:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  color: rgb(66, 42, 42);
+}
+
+section p a::after {
+  content: '';
+
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+
+  background-image: url(./images/external-link-52.png);
+  background-size: 1rem 1rem;
+  background-position: left 2px bottom;
+  background-repeat: no-repeat;
+}
+
+/* list */
+ol {
+  list-style-type: lower-alpha;
+}
+
+ul {
+  list-style-type: square;
+}
+
+/* nav */
+nav ul {
+  padding: 0;
+
+  list-style-type: none;
+}
+nav a {
+  display: inline-block;
+  padding: 1.5rem 2rem;
+  margin: 2rem;
+  width: 20rem;
+  border: 1px solid #a66;
+
+  text-align: center;
+  text-decoration: none;
+}
+
+nav a:focus,
+nav a:hover {
+  color: #fff;
+  background-color: #a66;
+}
+
+nav li a:active {
+  color: white;
+  background: black;
+}
